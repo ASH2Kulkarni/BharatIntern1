@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <script src="netflix.js"></script>
+    <link rel="stylesheet" href="nextflix.css">
+</head>
+<body>
+    <!--nav bar-->
+    <div class="main_nav">
+        <div class="nav">
+    
+            <div class="logo" ><img src="netflix_logo-removebg-preview.png" alt="netfix logo" width="180px"></div>
+               <div class="avatar" >
+                   <img src="Netflix-avatar.png" alt="" width="40px">
+               </div>
+           </div>
+    </div>
+   
+   
+    <!--banner vdo play in backgrond-->
+    <div id="banner">
+        
+        <div id="banner_contents">
+            <h1 id="banner_title"></h1>
+            <div id="banner_buttons">
+                <button id="banner_button" style="border-radius: 3px;">Play</button>
+                <button id="banner_button" style="border-radius: 3px;">My List</button>
+            </div>
+            <p id="banner_description"></p>
+        </div>
+
+        <div id="banner_fade_bottom"></div>
+    </div>
+
+    <!--rows-->
+    <div id="head_rows">
+        <div class="rows">
+            <h3 class="row_title"></h3>
+            <div class="row_posters"></div>
+        </div> 
+    </div>
+<script>
+    window.addEventListener("scroll",function(){
+
+        var nav =document.querySelector(".nav");
+        nav.classList.toggle("active", window.scrollY>0);
+
+
+    })
+</script>
+
+    
+</body>
+</html>

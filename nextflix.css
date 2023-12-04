@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Netflix Sans',sans-serif;
+
+    background-color: #111;
+}
+.main_nav{
+    position: relative;
+    
+}
+::-webkit-scrollbar{
+    width: 7px;
+
+   background-color: #111;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:white;
+    border-radius: 10px;
+} 
+
+
+.nav{
+    position:static;
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    width: 1400px;
+}
+.avatar{
+    width: 150px;
+}
+.avatar>img{
+    margin: 30px;
+}
+
+.nav_left{
+    margin-left: 20px;
+
+}
+
+.nav_right{
+    position: fixed;
+    right: 30px;
+    display: flex;
+    margin-right: 10px;
+   
+}
+#banner{
+    color: rgb(255, 255, 255);
+  
+   object-fit: cover;
+   height: 744px;
+   background-size: cover;
+   background-position: center center;
+  
+}
+#banner_contents{
+    height: 200px;
+    margin-left: 70px;
+    padding-top: 360px;
+}
+#banner_title{
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: .5rem;
+}
+#banner_description{
+    line-height: 1.5;
+    height: 20px;
+    width: 300px;
+    padding-top: 10px;
+    font-size: .9rem;
+}
+#banner_button{
+    cursor: pointer;
+    color: aliceblue;
+    border: none;
+    height: 1.5rem ;
+    width: 11rch ;
+    outline: none;
+    margin:.5rem .3rem;
+    background-color: rgba(223, 215, 215, 0.502);
+    font-weight: 750;
+    border-radius: 5;
+}
+#banner_button:hover{
+    color: black;
+    background-color: #e6e6e6;
+    transition: all .9s;
+}
+
+.rows{
+   
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.row_posters{
+    display: flex;
+   overflow-x: scroll;
+   overflow-y: hidden ;
+   padding: 18px;
+    max-height: 240px;
+    width: 100%;
+    object-fit: contain;
+    
+    transform: 500ms;
+    margin-left: 10px;
+    margin-right: 19px;
+}
+.row_posters::-webkit-scrollbar{
+    display: none;
+    
+}
+.row_posters:hover{
+    transform: scale(1.05);
+}
+.posterimage,
+.posterimage1,
+.posterimage2{
+    object-fit: contain;
+    width: 100%;
+    max-height: 500px;
+    transform: 500ms;
+}
+.posterimage:hover{
+    transform: scale(1.19);
+    opacity: 1;
+}
+.row_title{
+    color: white;
+    margin: 5px;
+    font-family: 'Netflix Sans', sans-serif;
+   padding-bottom: 0.1px;
+}
